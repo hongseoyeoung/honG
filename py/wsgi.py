@@ -1,5 +1,5 @@
 """
-WSGI config for gazua project.
+WSGI config for py project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gazua.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'py.settings')
 
 application = get_wsgi_application()
