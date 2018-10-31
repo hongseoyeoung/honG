@@ -9,3 +9,8 @@
 농촌의 일손 부족해결과 학생들의 다양한 봉사활동 확대를 위한 플랫폼 개발 <br>
 
 
+
+
+<br>Development environment :<br>
+python 3.6.2<br>
+django 2.1.2
