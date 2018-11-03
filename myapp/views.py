@@ -8,7 +8,6 @@ import json
 def index(request):
     return render(request,'home/index.html')
 
-
 def basic_grid(request):
     return render(request,'home/basic-grid.html')
 
@@ -23,4 +22,3 @@ def sidebar_left(request):
 
 def sidebar_right(request):
     return render(request,'home/sidebar-right.html')
-
