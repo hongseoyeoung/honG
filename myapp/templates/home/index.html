@@ -15,6 +15,8 @@ Licence URI: http://www.os-templates.com/template-terms
   <link rel="stylesheet" href="{% static 'css/layout.css' %}">
 </head>
 <body id="top">
+  
+  
    <div class="wrapper row1">
       <header id="header" class="hoc clear"> 
           <!-- ################################################################################################ -->
@@ -34,6 +36,7 @@ Licence URI: http://www.os-templates.com/template-terms
               </ul>
               </li>
               <li><a class="drop" href="#">Dropdown</a>
+                
               <ul>
                   <li><a href="#">Level 2</a></li>
                   <li><a class="drop" href="#">Level 2 + Drop</a>
@@ -46,8 +49,13 @@ Licence URI: http://www.os-templates.com/template-terms
                   <li><a href="#">Level 2</a></li>
               </ul>
               </li>
-              <li><a href="#">Link Text</a></li>
-              <li><a href="#">Link Text</a></li>
+              {% if user.is_active %}
+                  <li><a href="{%url 'login' %}"> <span class="glyphicon glyphicon-heart"></span> {{user.username}}</a></li>
+                  <li><a href="{% url 'logout' %}">Logout</a></li>
+                  {% else %}
+                  <li><a href="{%url 'login' %}"> <span class="glyphicon glyphicon-user"></span> Login</a></li>
+                  <li><a href="{% url 'admin:index' %}">Admin</a></li>
+                  {% endif %}
           </ul>
           </nav>
           <!-- ################################################################################################ -->

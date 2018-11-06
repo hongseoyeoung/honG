@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 from django.views.generic import TemplateView
+from django.conf.urls import url
 
 urlpatterns = [
     path('', views.index),
@@ -25,5 +26,7 @@ urlpatterns = [
     path('gallery',views.gallery),
     path('basic_grid',views.basic_grid),
     path('sidebar_left',views.sidebar_left),
-    path('sidebar_right',views.sidebar_right),   
+    path('sidebar_right',views.sidebar_right),
+    url(r'^accounts/signup$', views.CreateUserView.as_view(), name = 'signup'),
+    url(r'^accounts/login/done$', views.RegisteredView.as_view(), name = 'create_user_done'),
 ]
