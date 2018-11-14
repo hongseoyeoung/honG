@@ -14,3 +14,5 @@
 <br>Development environment :<br>
 python 3.6.2<br>
 django 2.1.2
+<br>
+![멋사홈페이지](멋사홈페이지.png)
