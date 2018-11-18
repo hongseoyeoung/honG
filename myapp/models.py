@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class Lecture_note(models.Model):
+    id = models.IntegerField()
+    title = models.CharField(max_length=200)
+    
