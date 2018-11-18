@@ -1,3 +1,4 @@
 from django.contrib import admin
+from .models import Lecture_note
 
-# Register your models here.
+admin.site.register(Lecture_note)
