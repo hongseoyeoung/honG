@@ -20,7 +20,7 @@
 
 <hr/>
 
-<br/><h2>Development environment</h2><br/>
+<h2>Development environment</h2><br/>
 **python 3.6.2**<br/>
 **django 2.1.2**<br/>
 <hr/>
