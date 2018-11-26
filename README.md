@@ -1,4 +1,6 @@
 # honG
+<br/>
+![likelion_logo](likelion_logo.PNG)
 
 오픈소스SW G조 레파지토리입니다.<br>
 
