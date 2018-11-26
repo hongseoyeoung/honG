@@ -1,6 +1,6 @@
 # honG
 <br/>
-![logo](https://user-images.githubusercontent.com/40227000/48993524-65745c80-f181-11e8-9d34-c65691eaad33.png)
+![likelion_logo](https://user-images.githubusercontent.com/40227000/48993524-65745c80-f181-11e8-9d34-c65691eaad33.png)
 
 오픈소스SW G조 레파지토리입니다.<br>
 
