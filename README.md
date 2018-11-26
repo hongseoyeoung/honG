@@ -20,7 +20,7 @@
 
 <hr/>
 
-<br/>Development environment :<br/>
+<br/><h2>Development environment</h2><br/>
 **python 3.6.2**<br/>
 **django 2.1.2**<br/>
 ![culion](culion.PNG)
