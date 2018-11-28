@@ -1,6 +1,6 @@
 # honG
 <br/>
-<img src="https://user-images.githubusercontent.com/40227000/48993524-65745c80-f181-11e8-9d34-c65691eaad33.png"></img><br/><br>
+<img src="https://user-images.githubusercontent.com/40227000/48993524-65745c80-f181-11e8-9d34-c65691eaad33.png" style="image-align:center"></img><br/><br>
 <hr/>
 
 
