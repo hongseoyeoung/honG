@@ -66,7 +66,61 @@
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
-  {%block content%}{%endblock%}
+  <div class="wrapper row2">
+        <section>
+            <div class="page_title">
+                <div class="page_title_in">
+                    <h2><strong>게시판</strong></h2>
+                </div>
+            </div> 
+            <div id="ctWrap">
+                <div id="content">
+                    {%block content%}{%endblock%}
+                </div>
+                <aside id="sidebar">
+                    <ul id="snb">
+                        <li>
+                            <h2>
+                                <a href="/lecture" target="_self">
+                                    <b>게시판 샘플</b>
+                                    <sub>sample.paged.kr</sub>
+                                </a>
+                            </h2>
+                        </li>
+                        <ul class="snb2dul">
+                            <li class="snb2d snb2d_bo_tablebasic">
+                                <a href="/lecture" target="_self" >
+                                    <b><i class="fa fa-angle-right"></i> 기본게시판</b>
+                                </a>
+                            </li>
+                            <li class="snb2d snb2d_bo_tableqna">
+                                <a href="/lecture" target="_self" >
+                                    <b><i class="fa fa-angle-right"></i> Q&A게시판</b>
+                                </a>
+                            </li>
+                            <li class="snb2d snb2d_bo_tablefaq">
+                                <a href="/lecture" target="_self" >
+                                    <b><i class="fa fa-angle-right"></i> FAQ게시판</b>
+                                </a>
+                            </li>
+                            <li class="snb2d snb2d_bo_tablewebzine">
+                                <a href="/lecture" target="_self" >
+                                    <b><i class="fa fa-angle-right"></i> 웹진형게시판</b>
+                                </a>
+                            </li>
+                            <li class="snb2d snb2d_bo_tableform">
+                                <a href="/lecture" target="_self" >
+                                    <b><i class="fa fa-angle-right"></i> 폼메일</b>
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                </aside>
+                <aside class="clb"></aside>
+            </div> 
+        </section>
+        
+    </div>
   <div class="wrapper row4">
     <footer id="footer" class="hoc clear"> 
       <!-- ################################################################################################ -->

@@ -12,7 +12,7 @@ from django.views.generic.edit import CreateView
 from django.views.generic import TemplateView
 from .forms import CreateUserForm
 from django.urls import reverse_lazy
-
+from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
 def index(request):
@@ -21,6 +21,10 @@ def index(request):
 def lecture_note(request):
     lecture_lists = Lecture_note.objects.filter(created_date__lte=timezone.now()).order_by('created_date')
     return render(request, 'lecture_note/lecture_note.html', {'lecture_lists': lecture_lists})
+
+def lecture_detail(request, pk):
+    lecture = get_object_or_404(Lecture_note, pk=pk)
+    return render(request, 'lecture_note/lecture_detail.html', {'lecture': lecture})
 
 
 # class SignUp(generic.CreateView):
