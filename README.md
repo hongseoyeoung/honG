@@ -30,4 +30,4 @@
 </ul>
 <hr/>
 <h2>웹페이지 구상도</h2><br/>
-![culion](culion.PNG)
+<img src="./culion.PNG"></img>
