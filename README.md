@@ -29,5 +29,5 @@
  <li><strong>django 2.1.2</strong></li><br/>
 </ul>
 <hr/>
-
+<h2>웹페이지 구상도</h2><br/>
 ![culion](culion.PNG)
