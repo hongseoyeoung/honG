@@ -21,4 +21,6 @@ urlpatterns = [
     path('accounts/signup', views.CreateUserView.as_view(), name = 'signup'),
     path('accounts/login/done', views.RegisteredView.as_view(), name = 'create_user_done'),
 
+    path('home/contact', views.contact, name='contact')
+
 ]
