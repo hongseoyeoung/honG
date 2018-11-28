@@ -21,7 +21,7 @@
  </ul>
 <hr/>
 
-<h2>Development environment</h2><br/>
+<h2>Development Environment</h2><br/>
 <ul>
  <li><strong>python 3.6.2</strong></li><br/>
  <li><strong>django 2.1.2</strong></li><br/>
