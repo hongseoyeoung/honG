@@ -4,7 +4,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-top: 50px;
+  /* margin-top: 50px; */
   margin-bottom: 60px;
 }
 .jumbotron {
@@ -202,4 +202,8 @@ footer .container-fluid p {
   display: inline-block;
   font-weight: normal;
   font-size: 12px;
+}
+
+#index_banner{
+  background-image: url('../images/demo/backgrounds/01.png');
 }
