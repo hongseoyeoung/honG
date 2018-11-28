@@ -1,4 +1,4 @@
-# honG
+# CULion Webpage
 <br/>
 <img src="https://user-images.githubusercontent.com/40227000/48993524-65745c80-f181-11e8-9d34-c65691eaad33.png" align="center"></img><br/><br>
 <hr/>
@@ -20,7 +20,6 @@
  <li>질의응답 게시판은 기본적인 CRUD와 이미지 업로드 기능 정도만 포함합니다. 관리자와 운영진은 모든 권한이 주어지며, 일반부원은 열람 외에는 본인의 게시물만 수정,삭제 등이 가능합니다.<br/>
  <img src="#"></img></li>
  </ul>
-
 <hr/>
 
 <h2>Development environment</h2><br/>
@@ -30,4 +29,73 @@
 </ul>
 <hr/>
 <h2>웹페이지 구상도</h2><br/>
-<img src="./culion.PNG"></img>
+<img src="./culion.PNG"></img><br/>
+<hr/>
+
+<h2>Release Note</h2><br/>
+<h3>18.10.30</h3><br/>
+<ul>
+ <li>Project repository 생성</li>
+ <li>Django Framework 기본 project 생성</li>
+ <li>README.md 생성</li>
+</ul><br/>
+
+<h3>18.10.31</h3><br/>
+<ul>
+ <li>Python 3.6.2 version 으로 작업환경 동기화</li>
+ <li>Django 2.1.2 version 으로 작업환경 동기화</li>
+ <li>README.md update</li>
+</ul><br/>
+
+<h3>18.11.02</h3><br/>
+<ul>
+ <li>Frontend Template 적용으로 시각적인 부분 개선</li>
+</ul><br/>
+
+<h3>18.11.04</h3><br/>
+<ul>
+ <li>Template 상속으로 코드 간소화</li>
+</ul><br/>
+
+<h3>18.11.06</h3><br/>
+<ul>
+ <li>회원가입 기능 추가</li>
+ <li>README.md update</li>
+</ul><br/>
+
+<h3>18.11.13</h3><br/>
+<ul>
+ <li>Webpage 구상도 추가</li>
+ <li>README.md update</li>
+</ul><br/>
+
+<h3>18.11.17</h3><br/>
+<ul>
+ <li>기존 오류 수정</li>
+ <li>lecture_note 추가</li>
+</ul><br/>
+
+<h3>18.11.18</h3><br/>
+<ul>
+ <li>충돌이 발생하는 cache 및 log 파일 .gitignore 추가</li>
+ <li>lecture_note 개선</li>
+ <li>Webpage base 수정 및 개선</li>
+</ul><br/>
+
+<h3>18.11.25</h3><br/>
+<ul>
+ <li>회원가입 기능 개선</li>
+ <li>README.md html요소 추가 및 가독성 개선</li>
+</ul><br/>
+
+<h3>18.11.26</h3><br/>
+<ul>
+ <li>Signin&out 기능 추가</li>
+ <li>Viewpage template 추가</li>
+ <li>기존 Base Template 디자인 수정</li>
+</ul><br/>
+
+<h3>18.11.27</h3><br/>
+<ul>
+ <li>README.md 로고 추가 및 update</li>
+</ul><br/>
