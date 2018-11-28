@@ -4,7 +4,6 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-top: 50px;
   margin-bottom: 60px;
 }
 .jumbotron {
@@ -202,4 +201,43 @@ footer .container-fluid p {
   display: inline-block;
   font-weight: normal;
   font-size: 12px;
+}
+
+#ctWrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto 100px;
+}
+
+#content {
+  float: right;
+  widows: 70%;
+  min-height: 200px;
+  height: auto !important;
+  font-size: 1em;
+}
+#bo_list {
+  position: relative;
+}
+
+#sideBar {
+  float: left;
+  width: 20%;
+}
+
+.clb {
+  clear: both;
+}
+
+#snb {
+  width: 100%;
+}
+
+#snb > li.snb.active {
+  display: block !important;
+}
+
+#snb > li.snb {
+  width: 100%;
+  display: none;
 }
