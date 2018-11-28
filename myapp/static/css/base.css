@@ -4,6 +4,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
+  margin-top: 50px;
   margin-bottom: 60px;
 }
 .jumbotron {
@@ -151,4 +152,54 @@ footer .container-fluid p {
 }
 .left {
   text-align: left;
+}
+
+.page_title {
+  background: url('../images/1.jpg') no-repeat;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  color: #fff;
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: repeat;
+  overflow: hidden;
+}
+.page_title_in {
+  padding: 80px 20px;
+  background: RGBA(0,0,0,0.3);
+}
+.page_title_in h2 {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1100px;
+  text-align: center;
+}
+.page_title_in h2 > strong {
+  display: block;
+  font-size: 40px;
+  height: 80px;
+  padding: 0 0 10px 0;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-shadow: RGBA(0,0,0,.5) 0px 0px 10px;
+  text-shadow: RGBA(0,0,0,.5) 0px 0px 10px 10px;
+}
+.page_title_in h2 .locationBar {
+  filter: Alpha(opacity=80);
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-shadow: RGBA(0,0,0,.5) 0px 0px 10px;
+  text-shadow: RGBA(0,0,0,.5) 0px 0px 10px 10px;
+}
+.page_title_in h2 .locationBar span {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 12px;
 }

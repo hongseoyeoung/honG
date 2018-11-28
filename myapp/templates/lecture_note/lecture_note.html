@@ -1,12 +1,17 @@
 {% extends 'base.html'%}
 
 {% block content%}
-    <h1>Lecture_note</h1>
+    <div class="page_title">
+        <div class="page_title_in">
+            <h2><strong>게시판</strong></h2>
+            <span class="locationBar">HOME</span>
+        </div>
+    </div>
     {% for lecture_list in lecture_lists %}
         <div>
             <p>created: {{ lecture_list.created_date }}</p>
             <h1><a href="">{{ lecture_list.title }}</a></h1>
-            <p>{{ lecture_list.content|linebreaksbr }}</p>
+            <p>{{ lecture_list.content|linebreaksbr }}</p>``
         </div>
     {% endfor %}
 {% endblock%}
