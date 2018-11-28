@@ -12,10 +12,14 @@ from django.views.generic.edit import CreateView
 from django.views.generic import TemplateView
 from .forms import CreateUserForm
 from django.urls import reverse_lazy
-
+from django.core.mail import EmailMessage
 
 # Create your views here.
 def contact(request):
+    if request.method == "POST":
+        email = EmailMessage(request.POST['name']+'의 메일',request.POST['phone'] +request.POST['message'] ,request.POST['email'], to=['khbasd@gmail.com'])
+        email.send()
+
     return render(request, 'home/contact.html',{})
 
 def index(request):
