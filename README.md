@@ -34,9 +34,62 @@
 
 <h2>How to Execution</h2><br/>
 (본 실행과정은 Python 3.6.2버전과 리눅스 환경을 기준으로 합니다.)
-<p>이 설명에서는 home 디렉토리 아래 <code>hongsam</code>라는 디렉토리를 새로 만들어 사용하도록 하겠습니다.<br/>
+<p>
+ 모든 과정에 앞서 로컬의 데이터를 최신버전으로 다운받습니다.<br/><br/>
+ 
+ <strong>command-line</strong><br/>
+ <code>$ sudo apt-get</code><br/>
+ <code>$ sudo apt-get update</code><br/>
+ <code>$ sudo apt-get upgrade</code><br/><br/>
+ 
+ 이 설명에서는 home 디렉토리 아래 <code>hongsam</code>라는 디렉토리를 새로 만들어 사용하도록 하겠습니다.<br/><br/>
+ 
+ <strong>command-line</strong><br/>
  <code>$ mkdir hongsam</code><br/>
- <code>$ cd hongsam</code></p>
+ <code>$ cd hongsam</code><br/><br/>
+ 
+ 이제 <code>myvenv</code>라는 이름의 가상환경을 만들어 보겠습니다.<br/><br/>
+ 
+ <strong>command-line</strong><br/>
+ <code>$ python3 -m venv myvenv</code><br/><br/>
+ 
+ 앞의 명령을 사용하면 <code>myvenv</code>라는 디렉토리가 만들어집니다. (이름을 변경하면 그 이름의 디렉토리가 만들어집니다) 
+ 그리고 해당 디렉토리에 가상환경이 들어있습니다.<br/><br/>
+ 
+ 이제 아래 명령어를 입력해 가상환경을 실행하시면 됩니다.<br/><br/>
+ 
+ <strong>command-line</strong><br/>
+ <code>$ .myvenv/bin/activate</code><br/><br/>
+ 
+ 콘솔의 프롬프트 앞에 <code>(myvenv)</code> 접두어가 붙어있다면 가상환경이 시작되었음을 알 수 있습니다.<br/>
+ 가상환경에서 작업 할 떄, Python은 자동으로 올바른 버전을 참조하므로 <code>python3</code> 대신 <code>python</code> 을 사용할 수 있습니다.<br/><br/>
+ 
+ 이제 장고를 설치합니다.<br/>
+ 그 전에 장고를 설치하는 데 필요한 <code>pip</code>가 최신 버전인지 확인합니다.<br/><br/>
+ 
+ <strong>command-line</strong><br/>
+ <code>(myvenv) ~$ python -m pip install --upgrade pip</code><br/>
+ <code>(myvenv) ~$ pip install django</code><br/><br/>
+ 
+ 이제 만들어둔 <code>hongsam</code>디렉토리에 깃 저장소의 파일을 받아옵니다.<br/><br/>
+ 
+ <strong>command-line</strong><br/>
+ <code>(myvenv) ~$ git init</code><br/>
+ <code>(myvenv) ~$ git pull "httpsL//github.com/khb1109/honG.git"</code><br/><br/>
+ 
+ 받아온 프로젝트를 실행시키기 위해서 데이터베이스를 마이그레이트 합니다.<br/><br/>
+ 
+ <strong>command-line</strong><br/>
+ <code>(myvenv) ~$ python manage.py makemigrations</code><br/>
+ <code>(myvenv) ~$ python manage.py migrate</code><br/><br/>
+ 
+ 여기까지 진행하셨다면, 이제 프로젝트를 웹 페이지로 확인할 수 있습니다! 다음과 같이 입력합니다.<br/><br/>
+ 
+ <strong>command-line</strong><br/>
+ <code>(myvenv) ~$ python manage.py runserver</code><br/><br/>
+ 
+ 서버를 작동시켰으니 웹 브라우저를 열고 url창에 <code>localhost:8000</code> 주소를 입력하면 웹 사이트를 볼 수 있습니다.
+ </p>
 
 <h2>Release Note</h2><br/>
 <h3>18.10.30</h3><br/>
