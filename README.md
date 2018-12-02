@@ -89,7 +89,7 @@
  <code>(myvenv) ~$ python manage.py runserver</code><br/><br/>
  
  서버를 작동시켰으니 웹 브라우저를 열고 url창에 <code>localhost:8000</code> 주소를 입력하면 웹 사이트를 볼 수 있습니다.
- </p>
+ </p><hr/>
 
 <h2>Release Note</h2><br/>
 <h3>18.10.30</h3><br/>
