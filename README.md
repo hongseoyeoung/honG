@@ -59,8 +59,7 @@
  
  <strong>command-line</strong><br/>
  <code>$ source myvenv/bin/activate</code><br/>
- <code>$ .myvenv/bin/activate</code><br/><br/>
- 
+ <code>$ .myvenv/bin/activate</code><br/>
  (p.s. 혹시 가상환경을 종료하고 싶다면 콘솔창에 <code>deactivate</code> 만 입력하면 됩니다.)<br/><br/>
  
  콘솔의 프롬프트 앞에 <code>(myvenv)</code> 접두어가 붙어있다면 가상환경이 시작되었음을 알 수 있습니다.<br/>
