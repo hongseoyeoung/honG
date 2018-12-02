@@ -10,14 +10,14 @@
  
  <h2>Webpage Preview</h2><br/>
  <ul>
- <img src="https://user-images.githubusercontent.com/40227000/49341140-b5c15200-f68c-11e8-8541-f232a8931ab9.png"></img></li>
- <li>공지사항 게시판은 간단하게 CRUD를 포함하고 모든 게시판에서 볼 수 있고 열람 가능한 형태입니다. 관리자는 모든 권한을 가지고, 운영진은 삭제를 제외한 모든 권한을 가지며, 일반 부원은 열람만 가능합니다. <br/></li>
- <li>수업자료 게시판은 운영진이 수업을 진행할 때 사용했던 프레젠테이션 파일, 영상 파일 등을 업로드할 수 있는 기능을 포함하며 기본적인 CRUD를 제공하고 운영진은 모든 권한이 가능하며, 일반 부원은 열람만 가능한 형태입니다. <br/>
- <img src="https://user-images.githubusercontent.com/40227000/49341146-bce86000-f68c-11e8-8533-76670e76028b.png"></img></li>
- <li>과제업로드 게시판은 주어진 과제를 제출할 수 있게끔 파일 업로드 기능을 포함하며(소스파일, 이미지 파일 등) 기본적인 CRUD를 포함합니다. 관리자는 모든 권한을 가지고, 운영진은 열람만 가능하며, 일반 부원은 본인의 게시물만 보여지고 수정가능하며 삭제가능합니다.<br/>
- <img src="https://user-images.githubusercontent.com/40227000/49341143-b8bc4280-f68c-11e8-91b8-4d3ff5ef5bda.png"></img></li>
- <li>질의응답 게시판은 기본적인 CRUD와 이미지 업로드 기능 정도만 포함합니다. 관리자와 운영진은 모든 권한이 주어지며, 일반부원은 열람 외에는 본인의 게시물만 수정,삭제 등이 가능합니다.<br/>
- <img src="https://user-images.githubusercontent.com/40227000/49341144-b9ed6f80-f68c-11e8-83d7-34325ac14d62.png"></img></li>
+ <img src="https://user-images.githubusercontent.com/40227000/49341140-b5c15200-f68c-11e8-8541-f232a8931ab9.png"></img></li><br/>
+ <li>공지사항 게시판은 간단하게 CRUD를 포함하고 모든 게시판에서 볼 수 있고 열람 가능한 형태입니다. 관리자는 모든 권한을 가지고, 운영진은 삭제를 제외한 모든 권한을 가지며, 일반 부원은 열람만 가능합니다. <br/></li><br/>
+ <li>수업자료 게시판은 운영진이 수업을 진행할 때 사용했던 프레젠테이션 파일, 영상 파일 등을 업로드할 수 있는 기능을 포함하며 기본적인 CRUD를 제공하고 운영진은 모든 권한이 가능하며, 일반 부원은 열람만 가능한 형태입니다. <br/><br/>
+ <img src="https://user-images.githubusercontent.com/40227000/49341146-bce86000-f68c-11e8-8533-76670e76028b.png"></img></li><br/>
+ <li>과제업로드 게시판은 주어진 과제를 제출할 수 있게끔 파일 업로드 기능을 포함하며(소스파일, 이미지 파일 등) 기본적인 CRUD를 포함합니다. 관리자는 모든 권한을 가지고, 운영진은 열람만 가능하며, 일반 부원은 본인의 게시물만 보여지고 수정가능하며 삭제가능합니다.<br/><br/>
+ <img src="https://user-images.githubusercontent.com/40227000/49341143-b8bc4280-f68c-11e8-91b8-4d3ff5ef5bda.png"></img></li><br/>
+ <li>질의응답 게시판은 기본적인 CRUD와 이미지 업로드 기능 정도만 포함합니다. 관리자와 운영진은 모든 권한이 주어지며, 일반부원은 열람 외에는 본인의 게시물만 수정,삭제 등이 가능합니다.<br/><br/>
+ <img src="https://user-images.githubusercontent.com/40227000/49341144-b9ed6f80-f68c-11e8-83d7-34325ac14d62.png"></img></li><br/>
  </ul>
 <hr/>
 
