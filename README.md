@@ -27,9 +27,16 @@
  <li><strong>django 2.1.2</strong></li><br/>
 </ul>
 <hr/>
+
 <h2>Webpage Structure</h2><br/>
 <img src="./culion.PNG"></img><br/>
 <hr/>
+
+<h2>How to Execution</h2><br/>
+(본 실행과정은 Python 3.6.2버전과 리눅스 환경을 기준으로 합니다.)
+<p>이 설명에서는 home 디렉토리 아래 <code>hongsam</code>라는 디렉토리를 새로 만들어 사용하도록 하겠습니다.<br/>
+ <code>$ mkdir hongsam</code><br/>
+ <code>$ cd hongsam</code></p>
 
 <h2>Release Note</h2><br/>
 <h3>18.10.30</h3><br/>
