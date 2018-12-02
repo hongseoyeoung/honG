@@ -15,10 +15,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <link href="{% static 'layout/styles/layout.css'%}" rel="stylesheet" type="text/css" media="all">
   <link href="{% static 'css/base.css'%}" rel="stylesheet" type="text/css" media="all">
-
+  <style>
+        p, td, a{
+            color: black;
+        }
+    </style>
   
   </head>
-  <body id="top">
+  <body id="top" >
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
@@ -30,8 +34,8 @@
       </div>
       <nav id="mainav" class="fl_right">
         <ul class="clear">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="lecture">lecture</a>
+          <li ><a href="/">Home</a></li>
+          <li class="active"><a href="#">lecture</a>
           </li>
           <li><a class="drop" href="#">Dropdown</a>
             <ul>
@@ -68,12 +72,11 @@
   <!-- ################################################################################################ -->
   <div class="wrapper row2">
         <section>
-            <div class="page_title">
-                <div class="page_title_in">
-                    <h2><strong>게시판</strong></h2>
+            <div class="page_title" style="background: url( {% static 'images/1.jpg' %}) no-repeat; height: 250px; background-position:center center;">
+                <div class="page_title_in"> 
                 </div>
             </div> 
-            <div id="ctWrap">
+            <div id="ctWrap" style="height:70%">
                 <div id="content">
                     {%block content%}{%endblock%}
                 </div>
@@ -82,12 +85,12 @@
                         <li>
                             <h2>
                                 <a href="/lecture" target="_self">
-                                    <b>게시판 샘플</b>
-                                    <sub>sample.paged.kr</sub>
+                                    <b>List</b>
+
                                 </a>
                             </h2>
                         </li>
-                        <ul class="snb2dul">
+                        <ul class="nav nav-pills nav-stacked">
                             <li class="snb2d snb2d_bo_tablebasic">
                                 <a href="/lecture" target="_self" >
                                     <b><i class="fa fa-angle-right"></i> 기본게시판</b>
@@ -121,36 +124,11 @@
         </section>
         
     </div>
-  <div class="wrapper row4">
-    <footer id="footer" class="hoc clear"> 
-      <!-- ################################################################################################ -->
-      <h6 class="heading">Lalapeden</h6>
-      <p>Vivamus quis tellus eget quam elementum aliquam cras nibh mi adipiscing a sodales in tincidunt ut enim praesent tempor molestie metus ut pretium odio.</p>
-      <ul class="faico clear">
-        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
-        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
-      </ul>
-      <nav>
-        <ul class="nospace">
-          <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Disclaimer</a></li>
-          <li><a href="#">Cookies</a></li>
-        </ul>
-      </nav>
-      <!-- ################################################################################################ -->
-    </footer>
-  </div>
+  
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
-  <div class="wrapper row5">
+  <div class="wrapper row5" style="background:white; border-top: 1px solid black;">
     <div id="copyright" class="hoc clear"> 
       <!-- ################################################################################################ -->
       <p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="#">Domain Name</a></p>

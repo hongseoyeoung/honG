@@ -132,9 +132,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 LOGIN_REDIRECT_URL = '/' 
 
 # get password 
-f = open("../key.txt", 'r')
-passwordkey = f.readline()
-f.close
+# f = open("../key.txt", 'r')
+# passwordkey = f.readline()
+# f.close
+
+passwordkey=""
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = "smtp.gmail.com"

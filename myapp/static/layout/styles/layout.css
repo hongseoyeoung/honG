@@ -234,7 +234,7 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#FFFFFF; background-color:#E03F3F;}
+body{color:#FFFFFF; background-color:#FFFFFF;}
 a{color:#E03F3F;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
@@ -252,7 +252,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#E03F3F;}
 .row2{color:#474747; background-color:#FFFFFF;}
 .row3{color:#474747; background-color:#F5F5F5;}
 .row4{color:#FFFFFF; background-color:#222222;}
-.row5, .row5 a{color:#FFFFFF; background-color:#E03F3F;}
+.row5, .row5 a{color:#FFFFFF; background-color:#F5F5F5;}
 
 
 /* Header */

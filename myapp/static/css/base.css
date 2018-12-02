@@ -5,7 +5,7 @@ html {
 body {
   /* Margin bottom by footer height */
   /* margin-top: 50px; */
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 .jumbotron {
   background-image: url("https://www.smak.co.za/images/bg.jpg");
@@ -155,10 +155,11 @@ footer .container-fluid p {
 }
 
 .page_title {
+  
   background: url('../images/1.jpg') no-repeat;
   width: 100%;
   text-align: center;
-  background-color: #fff;
+  /* background-color: #fff; */
   color: #fff;
   background-size: 100% auto;
   background-position: center center;
@@ -167,7 +168,7 @@ footer .container-fluid p {
 }
 .page_title_in {
   padding: 80px 20px;
-  background: RGBA(0,0,0,0.3);
+  /* background:black; */
 }
 .page_title_in h2 {
   margin: 0 auto;
@@ -208,9 +209,11 @@ footer .container-fluid p {
   background-image: url('../images/demo/backgrounds/01.png');
 }
 #ctWrap {
-  width: 100%;
+  width: 70%;
   max-width: 1200px;
-  margin: 50px auto 100px;
+  margin-left: 50px;
+  margin-top: 50px;
+  /* margin: 50px auto 100px; */
 }
 
 #content {
