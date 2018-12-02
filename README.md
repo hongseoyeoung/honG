@@ -159,3 +159,14 @@
 <ul>
  <li>README.md 로고 추가 및 update</li>
 </ul><br/>
+
+<h3>18.12.02</h3><br/>
+<ul>
+ <li>Lecture detail 추가</li>
+ <li>게시판 형태 수정 및 가독성 개선</li>
+ <li>Sidebar 디자인 개선</li>
+ <li>Base footer 변경</li>
+ <li>전체 폰트 수정</li>
+ <li>게시판 댓글 기능 추가</li>
+ <li>Lecture note 디자인 개선</li>
+</ul><br/>
