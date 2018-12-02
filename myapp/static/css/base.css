@@ -299,3 +299,9 @@ a.btn_b02, .btn_b02 {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.mydetailtitle{
+  display: block;
+  font-size: 1.5em;
+  margin: 5px 0 0;
+}
