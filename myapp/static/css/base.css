@@ -210,10 +210,8 @@ footer .container-fluid p {
 }
 #ctWrap {
   width: 70%;
-  max-width: 1200px;
-  margin-left: 50px;
-  margin-top: 50px;
-  /* margin: 50px auto 100px; */
+  max-width: 978px;
+   margin: 50px auto;
 }
 
 #content {
@@ -307,4 +305,32 @@ a.btn_b02, .btn_b02 {
   display: block;
   font-size: 1.5em;
   margin: 5px 0 0;
+  font-weight: bold;
+}
+
+#bo_v_info {
+  padding: 10px 0 15px;
+  margin: 0 0 20px;
+  border-bottom: 1px solid #ddd;
+  color: #666;
+}
+
+.msg_sound_only, .sound_only {
+  display: inline-block !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0;
+  line-height: 0;
+  border: 0 !important;
+  overflow: hidden !important;
+}
+
+#bo_v_info .sv_member {
+  color: #000;
+}
+#bo_list h2{
+  font-size:48px;
 }
