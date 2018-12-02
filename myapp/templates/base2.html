@@ -1,5 +1,10 @@
 {% load static %}
 <head>
+    <style>
+        p, a{
+            color: black;
+        }
+    </style>
   <title>{%block title%}{%endblock%}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -27,46 +32,46 @@
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <div class="wrapper row1">
-    <header id="header" class="hoc clear"> 
-      <!-- ################################################################################################ -->
-      <div id="logo" class="fl_left">
-        <h1><a href="/">Lalapeden</a></h1>
-      </div>
-      <nav id="mainav" class="fl_right">
-        <ul class="clear">
-          <li ><a href="/">Home</a></li>
-          <li class="active"><a href="#">lecture</a>
-          </li>
-          <li><a class="drop" href="#">Dropdown</a>
-            <ul>
-              <li><a href="#">Level 2</a></li>
-              <li><a class="drop" href="#">Level 2 + Drop</a>
+        <header id="header" class="hoc clear"> 
+          <!-- ################################################################################################ -->
+          <div id="logo" class="fl_left">
+            <h1><a href="/">Like Lion</a></h1>
+          </div>
+          <nav id="mainav" class="fl_right">
+            <ul class="clear">
+              <li><a href="/">Home</a></li>
+              <li class="active"><a href="#">lecture</a>
+              </li>
+              <li><a class="drop" href="#">Dropdown</a>
                 <ul>
-                  <li><a href="#">Level 3</a></li>
-                  <li><a href="#">Level 3</a></li>
-                  <li><a href="#">Level 3</a></li>
+                  <li><a href="#">Level 2</a></li>
+                  <li><a class="drop" href="#">Level 2 + Drop</a>
+                    <ul>
+                      <li><a href="#">Level 3</a></li>
+                      <li><a href="#">Level 3</a></li>
+                      <li><a href="#">Level 3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Level 2</a></li>
                 </ul>
               </li>
-              <li><a href="#">Level 2</a></li>
+              <li><a href="{%url 'contact'%}">CONTACT</a></li>
+              {% if user.is_active %}
+                <li><a class="drop" href="#">{{user.username}}</a>
+                  <ul>
+                    <li><a href="#">개인정보변경</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="{% url 'logout' %}?next=/">로그아웃</a></li>
+                  </ul>
+                </li>
+              {% else%}
+                <li><a href="{% url 'login'%}"> 로그인</a></li>
+              {%endif%}
             </ul>
-          </li>
-          <li><a href="#">Link Text</a></li>
-          {% if user.is_active %}
-            <li><a class="drop" href="#">{{user.username}}</a>
-              <ul>
-                <li><a href="#">개인정보변경</a></li>
-                <li><a href="#">마이페이지</a></li>
-                <li><a href="{% url 'logout' %}?next=/">로그아웃</a></li>
-              </ul>
-            </li>
-          {% else%}
-            <li><a href="{% url 'login'%}"> 로그인</a></li>
-          {%endif%}
-        </ul>
-      </nav>
-      <!-- ################################################################################################ -->
-    </header>
-  </div>
+          </nav>
+          <!-- ################################################################################################ -->
+        </header>
+      </div>
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
@@ -127,21 +132,21 @@
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <div class="wrapper row5" style="background:white; border-top: 1px solid black;">
-    <div id="copyright" class="hoc clear"> 
+        <div id="copyright" class="hoc clear"> 
+          <!-- ################################################################################################ -->
+          <p class="fl_left">Copyright &copy; CU LION  김홍빈, 홍서영, 홍지훈 - <a href="https://github.com/khb1109/hong">LINK</a></p>
+          <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+          <!-- ################################################################################################ -->
+        </div>
+      </div>
       <!-- ################################################################################################ -->
-      <p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="#">Domain Name</a></p>
-      <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
       <!-- ################################################################################################ -->
-    </div>
-  </div>
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-  <!-- JAVASCRIPTS -->
-  <script src="{% static 'layout/scripts/jquery.min.js'%}"></script>
-  <script src="{% static 'layout/scripts/jquery.backtotop.js'%}"></script>
-  <script src="{% static 'layout/scripts/jquery.mobilemenu.js'%}"></script>
-  <script src="{% static 'layout/scripts/jquery.flexslider-min.js'%}"></script>
-  </body>
-  </html>
+      <!-- ################################################################################################ -->
+      <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+      <!-- JAVASCRIPTS -->
+      <script src="{% static 'layout/scripts/jquery.min.js'%}"></script>
+      <script src="{% static 'layout/scripts/jquery.backtotop.js'%}"></script>
+      <script src="{% static 'layout/scripts/jquery.mobilemenu.js'%}"></script>
+      <script src="{% static 'layout/scripts/jquery.flexslider-min.js'%}"></script>
+      </body>
+      </html>
