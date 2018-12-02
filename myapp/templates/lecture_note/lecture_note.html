@@ -15,11 +15,9 @@
                 <thead>
                     <tr>
                         <th>번호</th>
-                        <th>제목</th>
+                        <th style="min-width:250px">제목</th>
                         <th>작성자</th>
-                        <th>날짜</th>
-                        <th>Entry</th>
-                        <th>Entry</th>
+                        <th>작성 날짜</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,8 +27,6 @@
                             <td><a href="{% url 'lecture_detail' pk=lecture_list.pk %}">{{lecture_list.title}}</a></td>
                             <td>{{lecture_list.author}}</td>
                             <td>{{lecture_list.created_date}}</td>
-                            <td>123</td>
-                            <td>Do some other</td>
                         </tr>
                     {% endfor %}
                 </tbody>
