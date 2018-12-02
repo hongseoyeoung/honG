@@ -334,3 +334,22 @@ a.btn_b02, .btn_b02 {
 #bo_list h2{
   font-size:48px;
 }
+
+#bo_vc .member, #bo_vc .guest, #bo_vc .sv_member, #bo_vc .sv_guest {
+  font-weight: bold;
+}
+
+#bo_vc .cmt_contents {
+  padding: 15px;
+  margin: 10px 0 0;
+  background: #f8fafb;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  line-height: 1.8em;
+}
+
+.bo_vc_act {
+    text-align: right;
+    margin: 0;
+    list-style: none;
+}

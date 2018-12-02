@@ -2,10 +2,20 @@
 
 {% block content%}
 <div id="bo_btn_top">
-    <a href="/lecture" class="btn_b02 btn" style="float:right">
-        <i class="fa fa-pencil" aria-hidden="true"></i>
-        글쓰기
-    </a>
+    <ul class="nav nav-pills" style="float:right">
+        <li>
+        <a href="/lecture" class="btn_b02 btn">
+            <i class="fa fa-list" aria-hidden="true"></i>
+            목록
+        </a>
+        </li>
+        <li class="nav nav-pills">
+        <a href="/lecture" class="btn_b02 btn">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+            글쓰기
+        </a>
+        </li>
+    </ul>
 </div>
 <div id="bo_list" style="width:100%">
     <article>
@@ -21,6 +31,47 @@
             &nbsp
             <strong class="if_date"><i class="fa fa-clock-o" aria-hidden="true"></i> 18-01-30 23:24</strong>
         </section>
+        <div>
+            <p>본문 본문본문 본문본문 본문본문 본문본문 본문본문 본문본문 
+            본문본문 본문본문 본문본문 본문본문 본본문 본문본문 본문본문 
+            본문본문 본문본문 본문본문 본문본문 본문본문 본문본문 본문본문 
+            본문본문 본문본문 본문본문 본문본문 본문본문 본문본문 본문본문 
+            본문본문 본문본문 본문본문 본문본문 본문본문 본문본문 본문본문
+             본문본문 본문본문 본문본문 본문
+            문본문 본문 본문본문 본문본문 본문본문 본문본문 본문본문</p>
+        </div>
+        <br>
+        <div style="border-top: solid; padding-top:10px">
+            <section id="bo_vc">
+
+                <i class="fa fa-commenting-o"></i>댓글
+                <div></div>
+                <br>
+                
+                <!--여기부터 반복문으로 댓글 기능-->
+                
+                <article>
+                    <header style="z-index:3">
+                        <span class="guest">댓글 작성자</span>
+                        <span class="bo_vc_hdinfo" style="float:right"><i class="fa fa-clock-o" aria-hidden="true"></i> <time datetime="2018-11-20T18:13:00+09:00">18-11-17 18:13</time></span>
+                    </header>
+                    
+                    <div class="cmt_contents">
+                        <p>댓글 내용 댓글 내용</p>
+                        <ul class="bo_vc_act">
+                            <li><button class="btn btn-default"><a href="./password.php?w=x&amp;bo_table=basic&amp;comment_id=39&amp;page=" onclick="return comment_delete();" class="btn_b03">삭제</a></button></li>           
+                        </ul>
+                    </div>
+                    <span id="edit_39" class="bo_vc_w"></span><!-- 수정 -->
+                    <span id="reply_39" class="bo_vc_w"></span><!-- 답변 -->
+
+                    <input type="hidden" value="" id="secret_comment_39">
+                    <textarea id="save_comment_39" style="display:none">ㄱㄷㄱ</textarea>
+
+                </article>
+            </section
+        </div>
+
     </article>
     </div>
 {% endblock%}
