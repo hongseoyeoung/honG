@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django import forms
+from .models import Lecture_note
 
 class CreateUserForm(UserCreationForm): # 내장 회원가입 폼을 상속받아서 확장한다.
     email = forms.EmailField(required=True) # 이메일 필드 추가
@@ -15,3 +16,8 @@ class CreateUserForm(UserCreationForm): # 내장 회원가입 폼을 상속받�
         if commit:
             user.save()
         return user
+
+class Lecture_noteForm(forms.ModelForm):
+    class Meta:
+        model = Lecture_note
+        fields = ("title", "content")

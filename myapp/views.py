@@ -1,8 +1,7 @@
 from django.shortcuts import render
 from django.utils import timezone
 from .models import Lecture_note
-
-
+from django.shortcuts import redirect
 # 회원가입을 하기위한 라이브러리
 
 # from django.contrib.auth.forms import UserCreationForm
@@ -10,10 +9,12 @@ from .models import Lecture_note
 
 from django.views.generic.edit import CreateView
 from django.views.generic import TemplateView
-from .forms import CreateUserForm
+from .forms import CreateUserForm,Lecture_noteForm
 from django.urls import reverse_lazy
 from django.core.mail import EmailMessage
 from django.shortcuts import render, get_object_or_404
+from django.db import models
+
 
 # Create your views here.
 def contact(request):
@@ -23,16 +24,32 @@ def contact(request):
 
     return render(request, 'home/contact.html',{})
 
+
+
 def index(request):
     return render(request, 'home/index.html')
 
 def lecture_note(request):
-    lecture_lists = Lecture_note.objects.filter(created_date__lte=timezone.now()).order_by('created_date')
+    lecture_lists = Lecture_note.objects.filter(created_date__lte=timezone.now()).order_by('created_date').reverse()
     return render(request, 'lecture_note/lecture_note.html', {'lecture_lists': lecture_lists})
 
 def lecture_detail(request, pk):
     lecture = get_object_or_404(Lecture_note, pk=pk)
     return render(request, 'lecture_note/lecture_detail.html', {'lecture': lecture})
+
+
+def lecture_new(request):
+    if request.method == "POST":
+        form = Lecture_noteForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+        return redirect('lecture_detail', pk=post.pk)
+    else:
+        form = Lecture_noteForm()
+    return render(request, 'lecture_note/new.html', {'form': form})
 
 
 # class SignUp(generic.CreateView):
