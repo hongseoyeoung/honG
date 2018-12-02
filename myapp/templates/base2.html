@@ -26,7 +26,7 @@
     <header id="header" class="hoc clear"> 
       <!-- ################################################################################################ -->
       <div id="logo" class="fl_left">
-        <h1><a href="/">Like Lion</a></h1>
+        <h1><a href="/">Lalapeden</a></h1>
       </div>
       <nav id="mainav" class="fl_right">
         <ul class="clear">
@@ -46,7 +46,7 @@
               <li><a href="#">Level 2</a></li>
             </ul>
           </li>
-          <li><a href="{%url 'contact'%}">CONTACT</a></li>
+          <li><a href="#">Link Text</a></li>
           {% if user.is_active %}
             <li><a class="drop" href="#">{{user.username}}</a>
               <ul>
@@ -66,10 +66,64 @@
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
-  {%block content%}{%endblock%}
-  <!-- <div class="wrapper row4">
+  <div class="wrapper row2">
+        <section>
+            <div class="page_title">
+                <div class="page_title_in">
+                    <h2><strong>게시판</strong></h2>
+                </div>
+            </div> 
+            <div id="ctWrap">
+                <div id="content">
+                    {%block content%}{%endblock%}
+                </div>
+                <aside id="sidebar">
+                    <ul id="snb">
+                        <li>
+                            <h2>
+                                <a href="/lecture" target="_self">
+                                    <b>게시판 샘플</b>
+                                    <sub>sample.paged.kr</sub>
+                                </a>
+                            </h2>
+                        </li>
+                        <ul class="snb2dul">
+                            <li class="snb2d snb2d_bo_tablebasic">
+                                <a href="/lecture" target="_self" >
+                                    <b><i class="fa fa-angle-right"></i> 기본게시판</b>
+                                </a>
+                            </li>
+                            <li class="snb2d snb2d_bo_tableqna">
+                                <a href="/lecture" target="_self" >
+                                    <b><i class="fa fa-angle-right"></i> Q&A게시판</b>
+                                </a>
+                            </li>
+                            <li class="snb2d snb2d_bo_tablefaq">
+                                <a href="/lecture" target="_self" >
+                                    <b><i class="fa fa-angle-right"></i> FAQ게시판</b>
+                                </a>
+                            </li>
+                            <li class="snb2d snb2d_bo_tablewebzine">
+                                <a href="/lecture" target="_self" >
+                                    <b><i class="fa fa-angle-right"></i> 웹진형게시판</b>
+                                </a>
+                            </li>
+                            <li class="snb2d snb2d_bo_tableform">
+                                <a href="/lecture" target="_self" >
+                                    <b><i class="fa fa-angle-right"></i> 폼메일</b>
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                </aside>
+                <aside class="clb"></aside>
+            </div> 
+        </section>
+        
+    </div>
+  <div class="wrapper row4">
     <footer id="footer" class="hoc clear"> 
-   
+      <!-- ################################################################################################ -->
       <h6 class="heading">Lalapeden</h6>
       <p>Vivamus quis tellus eget quam elementum aliquam cras nibh mi adipiscing a sodales in tincidunt ut enim praesent tempor molestie metus ut pretium odio.</p>
       <ul class="faico clear">
@@ -90,16 +144,16 @@
           <li><a href="#">Cookies</a></li>
         </ul>
       </nav>
-
+      <!-- ################################################################################################ -->
     </footer>
-  </div> -->
+  </div>
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <div class="wrapper row5">
     <div id="copyright" class="hoc clear"> 
       <!-- ################################################################################################ -->
-      <p class="fl_left">Copyright &copy; CU LION  김홍빈, 홍서영, 홍지훈 - <a href="https://github.com/khb1109/hong">LINK</a></p>
+      <p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="#">Domain Name</a></p>
       <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
       <!-- ################################################################################################ -->
     </div>

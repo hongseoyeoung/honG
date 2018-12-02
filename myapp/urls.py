@@ -1,13 +1,14 @@
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import url
 # from django.contrib.auth import views as auth_views   # 로그인/로그아웃 커스터마이징
 from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
     path('lecture/', views.lecture_note, name='lecture_note'),
-
-
+    url(r'^lecture/(?P<pk>\d+)/$', views.lecture_detail, name='lecture_detail'),
+    
     path('accounts/',include('django.contrib.auth.urls')),
 
 

@@ -245,3 +245,57 @@ footer .container-fluid p {
   width: 100%;
   display: none;
 }
+
+#bo_btn_top {
+  margin: 10px 0;
+}
+
+#bo_list_total {
+  float: left;
+  line-height: 30px;
+  font-size: 0.92em;
+  color: #4e546f;
+  padding: 0px;
+}
+
+.btn_bo_user {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#bo_btn_top:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  content: "";
+}
+
+a.btn_b02, .btn_b02 {
+  background: #666666;
+  color: #ffffff;
+  border: 1px solid #666666;
+}
+
+.btn_b01, .btn_b02, .btn_b03, .btn_b04, .btn_b05, .btn_admin, input.btn_submit, .btn_submit, .btn_cancel, .btn_frmline {
+  display: inline-block !important;
+  padding: 8px 10px;
+  font-size: 12px;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
