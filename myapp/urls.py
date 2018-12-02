@@ -8,7 +8,10 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('lecture/', views.lecture_note, name='lecture_note'),
     url(r'^lecture/(?P<pk>\d+)/$', views.lecture_detail, name='lecture_detail'),
-    
+    path('lecture/new',views.lecture_new, name='lecture_new'),
+
+
+
     path('accounts/',include('django.contrib.auth.urls')),
 
 

@@ -2,7 +2,7 @@
 
 {% block content%}
 <div id="bo_btn_top">
-    <a href="/lecture" class="btn_b02 btn" style="float:right">
+    <a href="{% url 'lecture_new'%}" class="btn_b02 btn" style="float:right">
         <i class="fa fa-pencil" aria-hidden="true"></i>
         글쓰기
     </a>
@@ -10,17 +10,18 @@
 <div id="bo_list" style="width:100%">
     <article>
         <heading>
-            <h2>게시판 제목</h2>
+            <h2>{{lecture.title}}</h2>
         </heading>
         <section id="bo_v_info">
-            <strong><span class="sv_member">작성자</span></strong>
+            <strong><span class="sv_member">작성자 : {{lecture.author}}</span></strong>
             &nbsp
             <strong><i class="fa fa-commenting-o" aria-hidden="true"></i> 댓글 수</a></strong>
             &nbsp
             <i class="fa fa-eye" aria-hidden="true"></i> 조회수</strong>
             &nbsp
-            <strong class="if_date"><i class="fa fa-clock-o" aria-hidden="true"></i> 18-01-30 23:24</strong>
+            <strong class="if_date"><i class="fa fa-clock-o" aria-hidden="true"></i>{{lecture.created_date}}</strong>
         </section>
     </article>
     </div>
+    {{lecture.content}}}
 {% endblock%}
