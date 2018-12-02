@@ -156,7 +156,6 @@ footer .container-fluid p {
 
 .page_title {
   
-  background: url('../images/1.jpg') no-repeat;
   width: 100%;
   text-align: center;
   /* background-color: #fff; */
@@ -167,6 +166,7 @@ footer .container-fluid p {
   overflow: hidden;
 }
 .page_title_in {
+
   padding: 80px 20px;
   /* background:black; */
 }
@@ -301,4 +301,10 @@ a.btn_b02, .btn_b02 {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.mydetailtitle{
+  display: block;
+  font-size: 1.5em;
+  margin: 5px 0 0;
 }
