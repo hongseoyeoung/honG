@@ -38,7 +38,6 @@
  모든 과정에 앞서 로컬의 데이터를 최신버전으로 다운받습니다.<br/><br/>
  
  <strong>command-line</strong><br/>
- <code>$ sudo apt-get</code><br/>
  <code>$ sudo apt-get update</code><br/>
  <code>$ sudo apt-get upgrade</code><br/><br/>
  
@@ -75,7 +74,7 @@
  
  <strong>command-line</strong><br/>
  <code>(myvenv) ~$ git init</code><br/>
- <code>(myvenv) ~$ git pull "httpsL//github.com/khb1109/honG.git"</code><br/><br/>
+ <code>(myvenv) ~$ git pull "https://github.com/khb1109/honG.git"</code><br/><br/>
  
  받아온 프로젝트를 실행시키기 위해서 데이터베이스를 마이그레이트 합니다.<br/><br/>
  
