@@ -32,14 +32,8 @@
             &nbsp
             <strong class="if_date"><i class="fa fa-clock-o" aria-hidden="true"></i>{{lecture.created_date}}</strong>
         </section>
-        <div>
-            <p>본문 본문본문 본문본문 본문본문 본문본문 본문본문 본문본문 
-            본문본문 본문본문 본문본문 본문본문 본본문 본문본문 본문본문 
-            본문본문 본문본문 본문본문 본문본문 본문본문 본문본문 본문본문 
-            본문본문 본문본문 본문본문 본문본문 본문본문 본문본문 본문본문 
-            본문본문 본문본문 본문본문 본문본문 본문본문 본문본문 본문본문
-             본문본문 본문본문 본문본문 본문
-            문본문 본문 본문본문 본문본문 본문본문 본문본문 본문본문</p>
+        <div style="min-height:100px">
+            <p>{{lecture.content}}</p>
         </div>
         <br>
         <div style="border-top: solid; padding-top:10px">
@@ -63,17 +57,24 @@
                             <li><button class="btn btn-default"><a href="./password.php?w=x&amp;bo_table=basic&amp;comment_id=39&amp;page=" onclick="return comment_delete();" class="btn_b03">삭제</a></button></li>           
                         </ul>
                     </div>
-                    <span id="edit_39" class="bo_vc_w"></span><!-- 수정 -->
-                    <span id="reply_39" class="bo_vc_w"></span><!-- 답변 -->
-
-                    <input type="hidden" value="" id="secret_comment_39">
-                    <textarea id="save_comment_39" style="display:none">ㄱㄷㄱ</textarea>
-
                 </article>
             </section
         </div>
+        <br>
+        <div class="col-lg" style="line-height: 1.8em">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="댓글을 입력하세요">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">작성</button>
+                </span>
+            </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+    </article>
+</aside>
+
+
 
     </article>
     </div>
-    {{lecture.content}}}
+    
 {% endblock%}
